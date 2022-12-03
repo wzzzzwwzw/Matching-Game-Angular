@@ -1,0 +1,23 @@
+<main>
+  <mat-card>
+    <form class="login-form">
+      <mat-form-field class="form-field-full-width">
+        <mat-label>Número de cartas</mat-label>
+        <select [(ngModel)]="cards" [ngModelOptions]="{standalone: true}" (change)="setCards()" matNativeControl required>
+          <option value="20">20</option>
+          <option value="26">26</option>
+          <option value="32">32</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field class="form-field-full-width">
+        <mat-label>Tiempo</mat-label>
+        <select [(ngModel)]="time" [ngModelOptions]="{standalone: true}" (change)="setTime()" matNativeControl required>
+          <option value="0">Sin tiempo</option>
+          <option value="60">60</option>
+          <option value="120">120</option>
+          <option value="150">150</option>
+        </select>
+      </mat-form-field>
+    </form>
+  </mat-card>
+</main>

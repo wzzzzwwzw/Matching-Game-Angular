@@ -1,0 +1,13 @@
+<form class="login-form in-tab" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+  <mat-form-field class="form-field-full-width">
+    <mat-label>Username</mat-label>
+    <input matInput placeholder="Username" formControlName="username">
+  </mat-form-field>
+  <mat-form-field class="form-field-full-width">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Password" type="password" formControlName="password">
+  </mat-form-field>
+  <button [disabled]="loginForm.invalid" mat-button mat-flat-button color="primary" style="display: block; width: 100%;">
+    Iniciar
+  </button>
+</form>

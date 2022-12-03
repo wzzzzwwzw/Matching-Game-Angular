@@ -1,0 +1,23 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+main {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+mat-card {
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+.form-field-full-width, input {
+  width: 80%;
+}
+
+.in-tab {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

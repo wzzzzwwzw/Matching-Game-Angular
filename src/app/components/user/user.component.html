@@ -1,0 +1,20 @@
+<main>
+  <div *ngIf="!isLogged">
+    <mat-card>
+      <mat-tab-group>
+        <mat-tab label="Iniciar Sesión">
+          <app-login></app-login>
+        </mat-tab>
+        <mat-tab label="Registro">
+          <app-signup></app-signup>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </div>
+  <div *ngIf="isLogged">
+    <mat-card>
+      <h1>Has iniciado sesión como {{name}}</h1>
+      <h2><a href="/logout">Cerrar sesión</a></h2>
+    </mat-card>
+  </div>
+</main>
